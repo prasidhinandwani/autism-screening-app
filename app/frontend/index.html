@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Infant Cry Acoustic Screening</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="hero">
+      <div class="hero-inner">
+        <h1>Infant Cry Acoustic Screening</h1>
+        <p class="sub">A VIT-Bhopal &amp; Johns Hopkins University Health-Hack Project</p>
+      </div>
+    </header>
+
+    <main>
+      <section class="notice">
+        <div class="notice-inner">
+          <div class="icon">⚠️</div>
+          <div>
+            <strong>Important: For Screening Purposes Only</strong>
+            <p>This is a screening tool, not a medical diagnosis. Results are based on acoustic patterns and are intended to support, not replace, professional clinical evaluation.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="upload-card">
+        <h3>Upload Cry Recording</h3>
+
+        <p id="fileName" class="file-name"></p>
+
+
+        <div id="dropZone" class="drop-zone" tabindex="0">
+          <input id="audioFile" type="file" accept="audio/*" />
+
+          <div class="drop-content">
+            <label for="audioFile" class="choose-btn">Choose Audio File</label>
+            <p class="formats">Supported formats: .wav, .mp3, .m4a</p>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button id="analyzeBtn" class="primary">Analyze</button>
+        </div>
+
+        <div id="resultCard" class="result-card hidden">
+          <div class="result-row">
+            <span class="label">Risk Level</span>
+            <span id="riskLabel" class="value badge">-</span>
+          </div>
+          <div class="result-row">
+            <span class="label">Confidence</span>
+            <span id="confidence" class="value">-</span>
+          </div>
+          <p id="disclaimerText" class="disclaimer"></p>
+        </div>
+
+      </section>
+
+      <footer class="privacy">
+        <p><strong>Privacy[cite: 107]:</strong> Your privacy is critical. Audio files are processed securely and are not stored permanently without your explicit consent.</p>
+      </footer>
+    </main>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
