@@ -5,4 +5,5 @@ librosa
 numpy
 python-multipart
 webrtcvad
+setuptools
 
